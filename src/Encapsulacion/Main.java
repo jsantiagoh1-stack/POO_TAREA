@@ -59,10 +59,30 @@ public class Main {
         Libro l1 = new Libro("EL QUIJOTE", "CERVANTES", 1056);
         Libro l2 = new Libro("EL PRINCIPITO", "SAINT-EXUPERY", 96);
         Libro l3 = new Libro("CIEN AÑOS DE SOLEDAD", "GARCIA MARQUEZ", 417);
-        
         l1.mostrar(); System.out.println("¿ES LARGO? " + l1.esLargo());
         l2.mostrar(); System.out.println("¿ES LARGO? " + l2.esLargo());
         l3.mostrar(); System.out.println("¿ES LARGO? " + l3.esLargo());
+        
+      //CLASE CALCULADORA
+        System.out.println("\n--- 6. CLASE CALCULADORA ---");
+        Calculadora calc = new Calculadora();
+        
+        // DECLARAR NUMEROS DE PRUEBA
+        double num1 = 15.0;
+        double num2 = 3.0;
+        
+        System.out.println("PROBANDO OPERACIONES CON LOS NUMEROS: " + num1 + " y " + num2);
+        System.out.println("SUMA: " + calc.sumar(num1, num2));
+        System.out.println("RESTA: " + calc.resta(num1, num2));
+        System.out.println("MULTIPLICACION: " + calc.multiplicacion(num1, num2));
+        System.out.println("DIVISION: " + calc.dividir(num1, num2));
+
+        // PRUEBA DE VALIDACION
+        System.out.println("\nPROBANDO VALIDACION DE DIVISION ENTRE CERO...");
+        double num3 = 0.0;
+        System.out.println("INTENTANDO DIVIDIR " + num1 + " ENTRE " + num3 + ":");
+        calc.dividir(num1, num3);
+      
         
         
         
