@@ -33,6 +33,20 @@ public class Main {
         }
 		
 		
+		//CLASE PRODUCTO
+		System.out.println("\n--- 3. CLASE PRODUCTO ---");
+		
+		Producto prod1 = new Producto ("B001", "LAPTOP", 1000.0);
+		Producto prod2 = new Producto ("B002", "MOUSE", 50.0);
+		
+		prod1.AplicarDescuento(15.0);
+		prod2.AplicarDescuento(10.0);
+		
+		prod1.mostrarInfo();
+		prod2.mostrarInfo();
+		
+		
+		
 		
 		
 
