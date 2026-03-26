@@ -1,10 +1,19 @@
 package Encapsulacion;
 
 public class Persona {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	
+	String nombre;
+	String apellido;
+	int edad;
+	
+	public Persona(String nom, String ape, int ed) {
+		nombre = nom;
+		apellido = ape;
+		edad = ed;
 	}
-
+	
+	public void mostrar () {
+		System.out.println("NOMBRE: " + nombre + " " + apellido + " | EDAD: " + edad);
+	}
+	
 }
