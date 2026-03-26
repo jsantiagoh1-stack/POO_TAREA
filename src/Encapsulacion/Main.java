@@ -45,6 +45,17 @@ public class Main {
 		prod1.mostrarInfo();
 		prod2.mostrarInfo();
 		
+		//CLASE CUENTA
+		System.out.println("\n--- 4. CLASE CUENTA ---");
+		Cuenta miCuenta = new Cuenta("BYRON", 500.0);
+        miCuenta.mostrarSaldo();
+        miCuenta.depositar(200.0);
+        miCuenta.retirar(800.0); 
+        miCuenta.retirar(150.0);
+        miCuenta.mostrarSaldo();
+        
+        
+		
 		
 		
 		
