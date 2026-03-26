@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		System.out.println("======== INICIANDO TAREAS ========");
+		System.out.println("======== POO-TAREAS ========");
 		
 		//CLASE PERSONA
 		System.out.println("\n--- 1. CLASE PERSONA ---");
@@ -16,6 +16,25 @@ public class Main {
 		p1.mostrar();
 		p2.mostrar();
 		p3.mostrar();
+		
+		
+		//CLASE RECTANGULO
+		System.out.println("\n--- 2. CLASE RECTANGULO ---");
+		
+		Rectangulo r1 = new Rectangulo (5.0, 10.0);
+		Rectangulo r2 = new Rectangulo (7.0, 8.0);
+		System.out.println("AREA R1: " + r1.area() + " | AREA R2: " + r2.area());
+		if (r1.area() > r2.area()) {
+            System.out.println("EL RECTANGULO 1 TIENE MAYOR AREA.");
+        } else if (r2.area() > r1.area()) {
+            System.out.println("EL RECTANGULO 2 TIENE MAYOR AREA.");
+        } else {
+            System.out.println("TIENEN LA MISMA AREA.");
+        }
+		
+		
+		
+		
 
 	}
 

@@ -1,10 +1,20 @@
 package Encapsulacion;
 
 public class Rectangulo {
+	double base;
+	double altura;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public Rectangulo (double b, double t ) {
+		base = b;
+		altura = t;
+	}
+	
+	public double area() {
+		return base * altura;
+	}
+	
+	public double perimetro() {
+		return 2 * ( base + altura );
 	}
 
 }
