@@ -82,14 +82,17 @@ public class Main {
         double num3 = 0.0;
         System.out.println("INTENTANDO DIVIDIR " + num1 + " ENTRE " + num3 + ":");
         calc.dividir(num1, num3);
-      
         
+     //CLASE FECHA
+        System.out.println("\n--- 7. CLASE FECHA ---");
+        Fecha f1 = new Fecha(15, 6, 2023);  // Válida
+        Fecha f2 = new Fecha(35, 2, 2024);  // Inválida (día 35)
+        Fecha f3 = new Fecha(10, 15, 2022); // Inválida (mes 15)
         
-        
-		
-		
-		
-		
+        f1.mostrar(); System.out.println("¿ES VALIDA? " + f1.esValida());
+        f2.mostrar(); System.out.println("¿ES VALIDA? " + f2.esValida());
+        f3.mostrar(); System.out.println("¿ES VALIDA? " + f3.esValida());
+
 
 	}
 
